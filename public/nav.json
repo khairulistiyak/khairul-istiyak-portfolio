@@ -1,0 +1,10 @@
+[
+  { "id": "0", "name": "About", "Icon": "FaServer" },
+  { "id": "1", "name": "Service", "Icon": "FaFaceAngry" },
+  { "id": "2", "name": "Skills", "Icon": "FaLink" },
+  { "id": "3", "name": "Portfolio", "Icon": "FaLink" },
+  { "id": "4", "name": "Contact", "Icon": "FaT" },
+  { "id": "5", "name": "Blog", "Icon": "FaCableCar" },
+  { "id": "6", "name": "Culture", "Icon": "FaUsb" },
+  { "id": "7", "name": "Arts", "Icon": "FaPalette" }
+]

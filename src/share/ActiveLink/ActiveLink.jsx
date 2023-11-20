@@ -7,17 +7,8 @@ const ActiveLink = ({ children, to }) => {
   return (
     <div className="hover:bg-[#242526]">
       <Link to={to}>
-        <div className={isActive ? "bg-[#242526] text-white hover:bg-[#3a3b3c]" : "text-"}>
-          <div
-            className={
-              isActive
-                ? "duration-[300ms] taos:[transform:perspective(2500px)_rotateY(-100deg)] taos:invisible taos:[backface-visibility:hidden]"
-                : ""
-            }
-            data-taos-offset="400"
-          >
-            {children}
-          </div>
+        <div className={isActive ? "bg-[#00000040] text-white hover:bg-[#3a3b3c] " : "grayscale hover:grayscale-0"}>
+          <div className={isActive ? " bg-[#e48511] w-1" : ""}>{children}</div>
         </div>
       </Link>
     </div>
