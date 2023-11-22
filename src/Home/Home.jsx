@@ -1,27 +1,32 @@
 import { Typewriter } from "react-simple-typewriter";
 import photo from "../assets/DSC_0872-copy.png";
+import NavProfile from "../NavBar/NavProfile";
 
 const Home = () => {
   return (
     <div>
+      <div className="grid justify-center"></div>
       <div
         className="lg:bg-cover md:bg-center bg-no-repeat min-h-screen opacity-10 "
         style={{
           backgroundImage: `url(https://i.postimg.cc/0NmY59B0/DSC-0872-copy.png)`,
         }}
       ></div>
-
+      <div className="absolute top-28 grid w-screen lg:hidden">
+        <NavProfile></NavProfile>
+        <hr />
+      </div>
       <div>
-        <div className="  absolute   top-52 w-1/2  left-96">
+        <div className="  absolute  lg:top-52 top-[500px] lg:w-1/2  lg:left-96 text-justify me-5">
           <div className=" flex-col lg:flex-row-reverse ps-3">
             <div>
               <div className="lg:w-1/2 md:w-1/2 ">
-                <h1 className="text-5xl font-bold">
+                <h1 className="lg:text-5xl text-3xl font-bold ">
                   Hi , i'm Khairul <span className="text-blue-600">Istiyak</span>
                 </h1>
                 <h1 className="text-2xl" style={{ paddingTop: "2rem", margin: "auto 0", fontWeight: "normal" }}>
                   {/* Life is simple{" "} */}
-                  <span className="text-blue-400 text-3xl" style={{ color: "", fontWeight: "bold" }}>
+                  <span className="text-blue-400 text-2xl" style={{ color: "", fontWeight: "bold" }}>
                     {/* Style will be inherited from the parent element */}
                     <Typewriter
                       words={["Full stack web developer", "and", "Graphic Designer"]}
