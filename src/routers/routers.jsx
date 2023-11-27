@@ -5,6 +5,8 @@ import Home from "../Home/Home";
 import Skills from "../Pages/skills";
 import Portfolio from "../Pages/Portfolio";
 import Contact from "../Pages/Contact";
+import OurTeams from "../share/ourTeams/ourTeams";
+import AdminControl from "../Provider/AdminControl/AdminControl";
 
 const router = createBrowserRouter([
   {
@@ -30,10 +32,22 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio></Portfolio>,
+        loader: () => fetch('http://localhost:5000/portfolio')
       },
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/teams",
+        element: <OurTeams></OurTeams>,
+        loader: () => fetch('teams.json')
+      },
+      {
+        path: "/control",
+        element: <AdminControl></AdminControl>,
+        loader: () => fetch('http://localhost:5000/portfolio')
+
       },
     ],
   },

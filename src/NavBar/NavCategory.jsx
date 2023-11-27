@@ -59,13 +59,23 @@ const NavCategory = () => {
             </div>
           </div>
         </ActiveLink>
-        <ActiveLink to="/contact">
+        <ActiveLink to="/teams">
           <div className=" h-14 flex ms-5 items-center">
             <div className="mx-5">
               <FcServices className="text-2xl "></FcServices>
             </div>
             <div>
-              <h1 className="text-base font-Poppins text-slate-200 ">Blog</h1>
+              <h1 className="text-base font-Poppins text-slate-200 ">Teams</h1>
+            </div>
+          </div>
+        </ActiveLink>
+        <ActiveLink to="/control">
+          <div className=" h-14 flex ms-5 items-center">
+            <div className="mx-5">
+              <FcServices className="text-2xl "></FcServices>
+            </div>
+            <div>
+              <h1 className="text-base font-Poppins text-slate-200 ">control</h1>
             </div>
           </div>
         </ActiveLink>

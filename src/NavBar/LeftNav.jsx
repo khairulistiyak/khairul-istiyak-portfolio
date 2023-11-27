@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import NavCategory from "./NavCategory";
-import { Link } from "react-router-dom";
 import NavProfile from "./NavProfile";
 
 const LeftNav = () => {
@@ -11,7 +10,7 @@ const LeftNav = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setNavList(data);
       });
   }, []);
