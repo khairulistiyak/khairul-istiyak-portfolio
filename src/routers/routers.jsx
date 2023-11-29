@@ -3,10 +3,11 @@ import Main from "../layout/Main";
 import About from "../Pages/About";
 import Home from "../Home/Home";
 import Skills from "../Pages/skills";
-import Portfolio from "../Pages/Portfolio";
+
 import Contact from "../Pages/Contact";
 import OurTeams from "../share/ourTeams/ourTeams";
 import AdminControl from "../Provider/AdminControl/AdminControl";
+import Portfolio from "../Pages/Portfolios/Portfolio";
 
 const router = createBrowserRouter([
   {
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio></Portfolio>,
-        loader: () => fetch('http://localhost:5000/portfolio')
+        loader: () => fetch('https://khairul-istiyak-portfolio-servier.vercel.app/portfolio')
       },
       {
         path: "/contact",
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       {
         path: "/control",
         element: <AdminControl></AdminControl>,
-        loader: () => fetch('http://localhost:5000/portfolio')
+        loader: () => fetch('https://khairul-istiyak-portfolio-servier.vercel.app/portfolio')
 
       },
     ],

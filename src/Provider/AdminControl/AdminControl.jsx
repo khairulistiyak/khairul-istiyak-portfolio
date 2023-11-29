@@ -10,11 +10,11 @@ const AdminControl = () => {
 
         const form = event.target;
         const title = form.title.value;
-        const photo = form.photo.value;
+        const video = form.video.value;
         const description = form.description.value;
-        const portfolioData = { title, photo, description };
+        const portfolioData = { title, video, description };
 
-        fetch('http://localhost:5000/portfolio', {
+        fetch('https://khairul-istiyak-portfolio-servier.vercel.app/portfolio', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(portfolioData),
@@ -27,7 +27,7 @@ const AdminControl = () => {
 
     return (
         <div>
-            <div className=" lg:grid lg:justify-center text-black resize pt-10 gap-3 md:mt-52 p-5">
+            <div className=" lg:grid lg:justify-center text-black resize pt-10 gap-3 md:mt-52 p-5 ">
                 <form onSubmit={handlePortfolio} className="form-control">
 
                     <div>
@@ -40,8 +40,9 @@ const AdminControl = () => {
 
                         </div>
                         <div className="mt-5">
-                            <textarea name="photo" className="textarea textarea-bordered h-14 lg:w-[700px] w-full md:w-96 resize-none bg-transparent border-slate-500 text-white focus:text-xl focus:bg-white focus:text-black " placeholder="Photo URL"></textarea>
+                            <textarea name="video" className="textarea textarea-bordered h-14 lg:w-[700px] w-full md:w-96 resize-none bg-transparent border-slate-500 text-white focus:text-xl focus:bg-white focus:text-black " placeholder="video URL"></textarea>
                         </div>
+
                     </div>
 
                     <button className=" btn w-full mt-5 bg-blue-700 text-xl text-white border-none hover:bg-blue-800">
