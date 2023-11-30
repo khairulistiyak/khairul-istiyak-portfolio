@@ -1,5 +1,9 @@
+import RoundAnimated from "../share/RoundAnimated/RoundAnimated";
+
 const Contact = () => {
-  return <div></div>;
+  return <div>
+    <RoundAnimated></RoundAnimated>
+  </div>;
 };
 
 export default Contact;

@@ -5,10 +5,10 @@ import PortfolioCard from "./PortfolioCard";
 const Portfolio = () => {
   const portfolios = useLoaderData()
   console.log(portfolios)
-  return <div>
-    <h1 className="text-center text-5xl my-10 uppercase font-Poppins font-semibold ">Portfolio</h1>
+  return <div className=" mx-5">
+    <h1 className="text-center text-xl my-5  uppercase font-Poppins font-semibold ">Portfolio</h1>
     <section>
-      <div className="grid lg:grid-cols-3 2xl:grid-cols-4 gap-5  ">
+      <div className="grid lg:grid-cols-3 :grid-cols-4 gap-4  ">
 
         {
           portfolios.map(portfolio => <PortfolioCard key={portfolio._id} portfolio={portfolio}></PortfolioCard>)

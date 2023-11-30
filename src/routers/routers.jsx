@@ -33,7 +33,12 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio></Portfolio>,
-        loader: () => fetch('https://khairul-istiyak-portfolio-servier.vercel.app/portfolio')
+        loader: () => fetch('http://localhost:5000/portfolio')
+      },
+      {
+        path: "/portfolio:id",
+        element: <Portfolio></Portfolio>,
+        loader: ({ params }) => fetch(`http://localhost:5000/portfolio/${params.id}`)
       },
       {
         path: "/contact",
@@ -47,7 +52,7 @@ const router = createBrowserRouter([
       {
         path: "/control",
         element: <AdminControl></AdminControl>,
-        loader: () => fetch('https://khairul-istiyak-portfolio-servier.vercel.app/portfolio')
+        loader: () => fetch('http://localhost:5000/portfolio')
 
       },
     ],

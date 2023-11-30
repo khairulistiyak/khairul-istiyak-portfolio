@@ -10,11 +10,14 @@ const Header = () => {
     return (
         <div className="mx-10 grid lg:grid-cols-3 me-5 items-center h-screen ">
             <div className="lg:col-span-1 order-last lg:-order-last md:-order-last">
-
-                <SiAdobeillustrator />
-                <SiAdobepremierepro />
-                <SiAdobeaftereffects />
-                <SiAdobeaudition />
+                <div className="w-80 h-80 grid items-center  justify-center rounded-full bg-slate-600">
+                    <div className="flex gap-5 rounded-full">
+                        <SiAdobeillustrator />
+                        <SiAdobepremierepro />
+                        <SiAdobeaftereffects />
+                        <SiAdobeaudition />
+                    </div>
+                </div>
             </div>
             <div className="col-span-1"><NavProfile></NavProfile></div>
             <div className="text-2xl grid justify-center">
@@ -28,19 +31,14 @@ const Header = () => {
                     <FaBootstrap />
                 </div>
                 <div className="flex gap-5">
-
                     <IoLogoJavascript />
                     <FaReact />
                     <SiReactrouter />
                     <FaNode />
                     <SiExpress />
                     <SiMongodb />
-
                 </div>
             </div>
-
-
-
         </div>
 
     );

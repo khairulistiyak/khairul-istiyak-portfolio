@@ -14,7 +14,7 @@ const AdminControl = () => {
         const description = form.description.value;
         const portfolioData = { title, video, description };
 
-        fetch('https://khairul-istiyak-portfolio-servier.vercel.app/portfolio', {
+        fetch('http://localhost:5000/portfolio', {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(portfolioData),
