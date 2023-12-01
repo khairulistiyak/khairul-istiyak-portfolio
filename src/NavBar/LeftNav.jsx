@@ -1,19 +1,9 @@
-import { useEffect, useState } from "react";
+
 import NavCategory from "./NavCategory";
 import NavProfile from "./NavProfile";
 
 const LeftNav = () => {
-  const [navLists, setNavList] = useState([""]);
-  // console.log(navLists);
-  useEffect(() => {
-    const url = "nav.json";
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-        setNavList(data);
-      });
-  }, []);
+
 
   return (
     <div className="">

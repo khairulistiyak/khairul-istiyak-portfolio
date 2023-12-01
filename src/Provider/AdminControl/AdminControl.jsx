@@ -27,13 +27,13 @@ const AdminControl = () => {
 
     return (
         <div>
-            <div className=" lg:grid lg:justify-center text-black resize pt-10 gap-3 md:mt-52 p-5 ">
+            <div className=" lg:grid lg:justify-center text-black resize pt-8 gap-3 md:mt-52 p-5 ">
+                <p className="text-white text-2xl">Add Portfolio</p>
                 <form onSubmit={handlePortfolio} className="form-control">
 
                     <div>
                         <div className="mt-5">
                             <textarea name="title" type="text" className="textarea textarea-bordered h-14 lg:w-[700px] w-full md:w-96 resize-none bg-transparent border-slate-500 text-white focus:text-xl focus:bg-white focus:text-black " placeholder="Title"></textarea>
-
                         </div>
                         <div className="mt-5">
                             <textarea name="description" className="textarea textarea-bordered h-14 lg:w-[700px] w-full md:w-96 resize-none bg-transparent border-slate-500 text-white focus:text-xl focus:bg-white focus:text-black " placeholder="Description"></textarea>

@@ -5,7 +5,7 @@ import TopNav from "../NavBar/TopNav";
 const Main = () => {
   return (
     <div className="2xl:mx-auto 2xl:container">
-      <div className="md:hidden lg:hidden block mb-5 ">
+      <div className="md:hidden lg:hidden block bg-slate-900 text-white  ">
         <TopNav></TopNav>
       </div>
       <div className="grid lg:grid-cols-6 md:grid-cols-6  bg-gradient-to-b from-[#161c34] via-[#140f38] to-[#000000] text-white  ">

@@ -7,7 +7,9 @@ import Skills from "../Pages/skills";
 import Contact from "../Pages/Contact";
 import OurTeams from "../share/ourTeams/ourTeams";
 import AdminControl from "../Provider/AdminControl/AdminControl";
-import Portfolio from "../Pages/Portfolios/Portfolio";
+import Portfolio from "../Pages/Portfolios/Portfolios";
+import EditPortfolio from "../Pages/Portfolios/EditPortfolio";
+import PortfolioCard from "../Pages/Portfolios/PortfolioCard";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +39,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/portfolio:id",
-        element: <Portfolio></Portfolio>,
+        element: <PortfolioCard></PortfolioCard>,
         loader: ({ params }) => fetch(`http://localhost:5000/portfolio/${params.id}`)
       },
       {
@@ -53,8 +55,19 @@ const router = createBrowserRouter([
         path: "/control",
         element: <AdminControl></AdminControl>,
         loader: () => fetch('http://localhost:5000/portfolio')
-
       },
+      {
+        path: "/editPortfolio/:id",
+        element: <EditPortfolio> </EditPortfolio>,
+        loader: ({ params }) => fetch(`http://localhost:5000/portfolio/${params.id}`)
+
+
+      }
+      // {
+      //   path: "/editPortfolio/:id",
+      //   element: <EditPortfolio></EditPortfolio>,
+      //   loader: ({ params }) => fetch(`http://localhost:5000/portfolio${params.id}`)
+      // },
     ],
   },
 ]);

@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
+
+
 const TopNav = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-transparent">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-xl">Istiyak</a>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Link</a>
+            <Link></Link>
           </li>
           <li>
             <details>
