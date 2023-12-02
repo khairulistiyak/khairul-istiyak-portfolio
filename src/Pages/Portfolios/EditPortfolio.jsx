@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 const EditPortfolio = () => {
     const editPortfolio = useLoaderData()
+    console.log(editPortfolio)
     const handleEditPortfolio = (event) => {
         event.preventDefault();
         const form = event.target;
@@ -11,12 +12,14 @@ const EditPortfolio = () => {
         const description = form.description.value;
         const updatePortfolio = { video, title, description }
         fetch(`http://localhost:5000/portfolio/${editPortfolio._id}`, {
-            method: "PATCH",
+            method: "PUT",
             headers: {
                 "content-type": "application/json"
             },
             body: JSON.stringify(updatePortfolio)
         })
+            .then(res => res.json())
+            .then(data => console.log(data))
 
     }
 

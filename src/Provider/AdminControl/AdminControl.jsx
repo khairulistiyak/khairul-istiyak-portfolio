@@ -33,15 +33,16 @@ const AdminControl = () => {
 
                     <div>
                         <div className="mt-5">
+                            <textarea name="video" className="textarea textarea-bordered h-14 lg:w-[700px] w-full md:w-96 resize-none bg-transparent border-slate-500 text-white focus:text-xl focus:bg-white focus:text-black " placeholder="video URL"></textarea>
+                        </div>
+                        <div className="mt-5">
                             <textarea name="title" type="text" className="textarea textarea-bordered h-14 lg:w-[700px] w-full md:w-96 resize-none bg-transparent border-slate-500 text-white focus:text-xl focus:bg-white focus:text-black " placeholder="Title"></textarea>
                         </div>
                         <div className="mt-5">
                             <textarea name="description" className="textarea textarea-bordered h-14 lg:w-[700px] w-full md:w-96 resize-none bg-transparent border-slate-500 text-white focus:text-xl focus:bg-white focus:text-black " placeholder="Description"></textarea>
 
                         </div>
-                        <div className="mt-5">
-                            <textarea name="video" className="textarea textarea-bordered h-14 lg:w-[700px] w-full md:w-96 resize-none bg-transparent border-slate-500 text-white focus:text-xl focus:bg-white focus:text-black " placeholder="video URL"></textarea>
-                        </div>
+
 
                     </div>
 

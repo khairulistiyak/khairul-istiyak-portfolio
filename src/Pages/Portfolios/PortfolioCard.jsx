@@ -6,9 +6,9 @@ import Swal from "sweetalert2";
 
 const PortfolioCard = ({ portfolio }) => {
 
-    const { video, _id, title, description } = portfolio;
-    // const description = portfolio.description.slice(0, 100)
-    // const title = portfolio.title.slice(0, 60)
+    const { video, _id } = portfolio;
+    const description = portfolio.description.slice(0, 120)
+    const title = portfolio.title.slice(0, 60)
 
     const handleDelete = (_id) => {
         Swal.fire({
@@ -45,7 +45,7 @@ const PortfolioCard = ({ portfolio }) => {
 
     return (
         <div>
-            <div className="card w-full bg-transparent shadow-xl border-2 border-slate-800  mt-5">
+            <div className="card w-full bg-transparent shadow-xl h-96 border-2 border-slate-800  mt-5">
                 <figure className="w-full h-[200px]" ><ReactPlayer height="100%" url={video} /></figure>
                 <div className="card-body text-justify py-3 px-5">
                     <Link to={video} target="_blank"> <h2 className="card-title text-sm ">{title}</h2></Link>

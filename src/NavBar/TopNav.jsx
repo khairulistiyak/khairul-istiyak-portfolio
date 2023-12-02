@@ -1,31 +1,35 @@
+import { FcServices } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 
 const TopNav = () => {
   return (
     <div className="navbar bg-transparent">
-      <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Istiyak</a>
-      </div>
+
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
+
           <li>
-            <Link></Link>
-          </li>
-          <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2 bg-base-100">
+            <details className="">
+              <summary></summary>
+              <ul className="p-2  bg-slate-900">
                 <li>
-                  <a>Link 1</a>
+                  <Link to='/portfolio'>Portfolio</Link>
                 </li>
                 <li>
-                  <a>Link 2</a>
+                  <Link>
+
+                    <FcServices className="text-xl "></FcServices> <small>Servicre</small>
+                  </Link>
                 </li>
               </ul>
             </details>
           </li>
         </ul>
+      </div>
+      <div className="flex">
+        <a className="btn btn-ghost text-xl">Istiyak</a>
+        <a className="btn btn-ghost text-xl">Istiyak</a>
       </div>
     </div>
   );
